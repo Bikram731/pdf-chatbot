@@ -18,7 +18,7 @@ llm = ChatOpenAI(
 
 # Full prompt and model
 def get_answer(question: str, context: str) -> str:
-    print("🤖 get_answer() called with question:", question)
+    print( question)
     prompt = PromptTemplate(
         input_variables=["context", "question"],
         template="""
